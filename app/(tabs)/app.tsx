@@ -2,6 +2,8 @@ import { StyleSheet, Text, View, Button, TextInput } from 'react-native'
 import { useFonts } from 'expo-font'
 import { useState } from 'react'
 
+# test pull
+
 export default function App(){
     const [enteredGoalText, setEnteredGoalText] = useState('')
     const [courseGoals, setCourseGoals] = useState([])
