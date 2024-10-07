@@ -11,8 +11,10 @@ export default function App(){
     }
 
     function addGoalHandler(){
-        setCourseGoals((courseGoals)=>[...courseGoals, enteredGoalText])
-        setEnteredGoalText('')
+        if (enteredGoalText != ''){
+            setCourseGoals((courseGoals)=>[...courseGoals, enteredGoalText])
+            setEnteredGoalText('')
+        }
         console.log(courseGoals)
     }
 
